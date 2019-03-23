@@ -1,6 +1,5 @@
 import os
 import glob
-import hdf5_getters
 import pandas as pd
 import tqdm
 import numpy as np
