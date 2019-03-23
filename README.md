@@ -28,6 +28,11 @@ Here we store the weights of neural network.
 ## history
 Here we store the training and testing history of neural network.
 
+## dataset.py:
+Here we dowload and pre-process the data. 
+
+Tempory data are store in tmp, while training and testing data are stored in train_set and test_set respectively.
+
 ## nn.py
 Implementation of neural network mdoel.
 
