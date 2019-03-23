@@ -17,7 +17,7 @@ We store all the temperory file here. The order is:
 * feature_complete_1990_2019.xlsx: here we add "artist_score" feature to feature_1990_2019
 * feature_complete_normalized_1990_2019.xlsx: we normalized the features to have zero mean and one std in feature_complete_1990_2019
 
-## test_set and train_set:
+## test_set and train_set
 Training data and testing data are splited from ./tmp/feature_complete_normalized_1990_2019.xlsx by 75:25 ratio.
 * train.xlsx: includes 8624 samples, of which 4695 are positve and 3929 are negative.
 * test.xlsx: includes 2875 samples, of which 1553 are postive and 1322 are negative.
@@ -28,7 +28,7 @@ Here we store the weights of neural network.
 ## history
 Here we store the training and testing history of neural network.
 
-## dataset.py:
+## dataset.py
 Here we dowload and pre-process the data. 
 
 Tempory data are stored in tmp, while training and testing data are stored in train_set and test_set respectively.
