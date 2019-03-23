@@ -36,3 +36,12 @@ Implementation of tree.
 
 ## forest.py
 Implementation of random forest.
+
+## Basic Result
+
+|   Model |      train accuracy     |  test accuracy |
+|----------|:-------------:|------:|
+| SVM |  0.7968 | 0.8055 |
+| nn |    0.7908	   |   0.7968 |
+| tree | 1.0 |    0.7540|
+|forest|    0.9087           |   0.8302     |
