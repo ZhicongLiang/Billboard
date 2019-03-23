@@ -1,5 +1,8 @@
 # Billboard
 
+Here we implement several models to predict whether a songs will hit the [Billboard hot-100 ranking](https://www.billboard.com/charts/hot-100).
+Datasets, models and result are list below.
+
 ## MSD
 The Million Songs Dataset, but we only keep the Additional/subset_unique_tracks.txt file since we only need the title and artist name for each tracks.
 
