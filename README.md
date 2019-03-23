@@ -4,7 +4,7 @@ Here we implement several models to predict whether a songs will hit the [Billbo
 Datasets, models and result are list below.
 
 ## MSD
-The Million Songs Dataset, but we only keep the Additional/subset_unique_tracks.txt file since we only need the title and artist name for each tracks.
+The Million Songs Dataset, of which we only keep the Additional/subset_unique_tracks.txt file since we only need the title and artist name for each tracks.
 
 ## tmp
 
