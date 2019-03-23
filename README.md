@@ -31,7 +31,7 @@ Here we store the training and testing history of neural network.
 ## nn.py
 Implementation of neural network mdoel.
 
-Comment: The loss of this neural network does not converage well. But the accuracy converages. We suspect this is caused by outliers, since BCELoss is unbouned.
+*Comment: The loss of this neural network does not converage well. But the accuracy converages. We suspect this is caused by outliers, since BCELoss is unbouned.
 
 ## SVM.py
 Implementation of SVM.
