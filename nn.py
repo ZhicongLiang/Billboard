@@ -81,10 +81,10 @@ if __name__ == '__main__':
     
     # hyperparameter setting
     batch_size = 128
-    epochs = 40
+    epochs = 100
     threshold = 0.5
     
-    learning_rate = 1e-6
+    learning_rate = 1e-4
     decay = 1e-4
     momentum = 0.95
     
@@ -99,7 +99,7 @@ if __name__ == '__main__':
     
     criterion = nn.BCELoss()
     optimizer = torch.optim.SGD(model.parameters(), lr=learning_rate, weight_decay=decay, momentum=momentum)
-    scheduler = torch.optim.lr_scheduler.StepLR(optimizer, step_size=5, gamma=0.5)
+    scheduler = torch.optim.lr_scheduler.StepLR(optimizer, step_size=step_size, gamma=0.5)
     
     hist = pd.DataFrame(columns=['epoch', 'loss', 'train_accuracy', 'test_accuracy', 'time'])
     for epoch in range(epochs):
@@ -109,9 +109,11 @@ if __name__ == '__main__':
             
             x, y = Variable(x, requires_grad=False), Variable(y.to(torch.float)[:,None], requires_grad=False)
             
+            optimizer.zero_grad()
+            
             logits = model(x)
             loss = criterion(logits, y)
-
+            
             loss.backward()
             optimizer.step()
         
@@ -128,7 +130,7 @@ if __name__ == '__main__':
         hist.loc[hist.shape[0]+1] = [epoch, loss.item(), train_accuracy, test_accuracy, toc-tic]
         hist.to_excel('./history/nn.xlsx')
     
-    # save the model weights
+#     save the model weights
     state_dict = model.state_dict()
     torch.save(state_dict, './weights/nn.pth')
     
