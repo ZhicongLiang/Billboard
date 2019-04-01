@@ -52,6 +52,6 @@ Implementation of random forest.
 |   Model |      train accuracy     |  test accuracy |
 |----------|:-------------:|------:|
 | SVM |  0.7968 | 0.8055 |
-| nn |    0.8142	   |   0.8160 |
+| nn |    0.8188	   |   0.8198 |
 | tree | 1.0 |    0.7540|
 |forest|    0.9087           |   0.8302     |
