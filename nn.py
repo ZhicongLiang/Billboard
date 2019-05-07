@@ -84,7 +84,7 @@ if __name__ == '__main__':
     epochs = 100
     threshold = 0.5
     
-    learning_rate = 1e-4
+    learning_rate = 5e-4
     decay = 1e-4
     step_size = 10
     momentum = 0.95
