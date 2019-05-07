@@ -86,6 +86,7 @@ if __name__ == '__main__':
     
     learning_rate = 1e-4
     decay = 1e-4
+    step_size = 10
     momentum = 0.95
     
     # get the dataset
